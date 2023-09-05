@@ -46,7 +46,10 @@ namespace Platformer.Gameplay
             }
             else
             {
-                Schedule<PlayerDeath>();
+                GlobalData.playerHealth.Decrement();
+                if (!GlobalData.playerHealth.IsAlive) {
+                    Schedule<PlayerDeath>();
+                }
             }
         }
     }

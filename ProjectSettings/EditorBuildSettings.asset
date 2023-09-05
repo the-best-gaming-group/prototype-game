@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OpenDoorScene.unity
     guid: 0531c78109ac6734da991b1d53f21a24
+  - enabled: 1
+    path: Assets/Scenes/OpenScene.unity
+    guid: d8eed639401f0d741848ca7c708f2f0b
   m_configObjects: {}

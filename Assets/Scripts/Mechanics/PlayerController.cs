@@ -31,7 +31,6 @@ namespace Platformer.Mechanics
         private bool stopJump;
         /*internal new*/ public Collider2D collider2d;
         /*internal new*/ public AudioSource audioSource;
-        public Health health;
         public bool controlEnabled = true;
 
         bool jump;
@@ -44,11 +43,11 @@ namespace Platformer.Mechanics
 
         void Awake()
         {
-            health = GetComponent<Health>();
             audioSource = GetComponent<AudioSource>();
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
+            Debug.Log("Player health is: " + GlobalData.playerHealth.currentHP.ToString());
         }
 
         protected override void Update()
