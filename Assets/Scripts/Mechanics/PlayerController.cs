@@ -47,6 +47,9 @@ namespace Platformer.Mechanics
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
+            if (GlobalData.playerHealth == null) {
+                GlobalData.InitHealth();
+            }
             Debug.Log("Player health is: " + GlobalData.playerHealth.currentHP.ToString());
         }
 

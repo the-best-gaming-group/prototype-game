@@ -21,7 +21,7 @@ namespace Platformer.Gameplay
 
         public override void Execute()
         {
-            door.sceneChanger.ChangeScene(door.sceneName);
+            door.invokable.Invoke();
         }
         
     }

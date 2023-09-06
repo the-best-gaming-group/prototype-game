@@ -121,87 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &210671370
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8598085073322057679, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_Name
-      value: SceneChanger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8598085073322057712, guid: 73c7bccd0fff5dd43863102b037f8f88,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 73c7bccd0fff5dd43863102b037f8f88, type: 3}
---- !u!114 &210671371 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8598085073322057713, guid: 73c7bccd0fff5dd43863102b037f8f88,
-    type: 3}
-  m_PrefabInstance: {fileID: 210671370}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 676f5abde6e72e7458e26e2a60388540, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1012298098
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +132,7 @@ GameObject:
   - component: {fileID: 1012298099}
   - component: {fileID: 1012298100}
   - component: {fileID: 1012298101}
+  - component: {fileID: 1012298102}
   m_Layer: 0
   m_Name: GlobalData
   m_TagString: Untagged
@@ -246,8 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38f450993b49ed54ea8e54f065667605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 210671371}
-  FirstScene: BenScene
 --- !u!114 &1012298101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,6 +179,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 100
+--- !u!114 &1012298102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012298098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676f5abde6e72e7458e26e2a60388540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: BenScene
 --- !u!1 &1872521136
 GameObject:
   m_ObjectHideFlags: 0
