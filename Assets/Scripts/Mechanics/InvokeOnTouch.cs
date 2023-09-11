@@ -8,7 +8,7 @@ using Platformer.Core;
 namespace Platformer.Mechanics
 {
     [RequireComponent(typeof(Collider2D), typeof(Invokable))]
-    public class InteractInvoke : MonoBehaviour
+    public class InvokeOnTouch : MonoBehaviour
     {
         public Invokable invokableObject;
         bool isInteractable = false;
@@ -21,8 +21,7 @@ namespace Platformer.Mechanics
         // Update is called once per frame
         void Update()
         {
-            if (isInteractable && (
-                Input.GetAxis("Vertical") > 0 || Input.GetButtonDown("Jump"))) {
+            if (isInteractable && ( Input.GetAxis("Vertical") > 0 || Input.GetButtonDown("Jump"))) {
                 invokableObject.Invoke();
             }
         }
@@ -35,8 +34,9 @@ namespace Platformer.Mechanics
             }
         }
         
-        void OnCollisionExit2d(Collision2D collision) {
+        void OnCollisionExit2D(Collision2D collision) {
             var player = collision.gameObject.GetComponent<PlayerController>();
+            Debug.Log(player);
             if (player != null)
             {
                 isInteractable = false;

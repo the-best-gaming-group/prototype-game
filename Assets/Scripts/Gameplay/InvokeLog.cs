@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Platformer.Core;
 
-public class LogOnInvoke : MonoBehaviour, Invokable
+public class InvokeLog : MonoBehaviour, Invokable
 {
     // Start is called before the first frame update
     void Start()

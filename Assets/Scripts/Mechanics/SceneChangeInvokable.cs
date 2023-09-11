@@ -4,7 +4,7 @@ using Platformer.Core;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChangeInvoke : MonoBehaviour, Invokable
+public class SceneChangeInvokable : MonoBehaviour, Invokable
 {
 	public string sceneName;
 	public void ChangeScene()
